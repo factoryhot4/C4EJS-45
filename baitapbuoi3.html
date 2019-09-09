@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tính diện tích hình tam giác</title>
+</head>
+<body>  
+    <h1>tính diện tích hình tam giác</h1>
+    <script>
+        
+        let a = Number(prompt("mời bạn nhập cạnh a : "));
+        let b = Number(prompt(" mời bạn nhập cạnh b :"));
+        let c = Number(prompt("mời bạn nhập cạnh c :"));
+        let p = 0.5* (a +b +c);
+        
+        alert("chúng ta có giá trị chu vi  là : " + p) ;
+        let dienTich = Math.sqrt(p*((p -a)*(p-b)*(p-c)));
+        alert("vậy suy ra ta có diện tích là : " + dienTich );
+
+    </script>
+    
+</body>
+</html>
