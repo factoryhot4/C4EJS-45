@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>quan ly hoc sinh</title>
+</head>
+<body>  
+    <h1>Quan ly hoc sinh</h1>
+    <script> 
+    let hocSinh = [];
+    while (true) { 
+        let operation = prompt("Nhập C, R ,U , D , exit để tạo mới , đọc , chinhr sửa , xóa học sinh và thoát khỏi chương trình ");
+        if ( operation === "C") {
+            let hocSinhMoi = prompt(" moi ban nhap ten hoc sinh moi");
+            hocSinh.push(hocSinhMoi);
+
+        }else if (operation === 'exit'){
+            break ;
+
+        }else if (operation === 'R'){
+            let timHocSinh =prompt (" ban muoc tim hoc sinh so may ?");
+            timHocSinh = Number(timHocSinh);
+            console.log(hocSinh[timHocSinh - 1]);
+
+        }else if (operation === 'U'){
+            let thayDoi = prompt ( " ban muon thay doi hoc sinh thu may :?");
+            thayDoi = Number(thayDoi);
+            let doiTenMoi = prompt(" ban muon doi ten hoc sinh thanh gi?");
+            hocSinh[thayDoi - 1 ] = doiTenMoi;
+            console.log(hocSinh);
+
+        } else if (operation === "D"){
+            let xoaHocSinh = prompt(" ban muon xoa hoc sinh thu may:?");
+            xoaHocSinh = Number(xoaHocSinh);
+            hocSinh.splice(xoaHocSinh -1  , 1 );
+            console.log(hocSinh);
+
+        }
+            
+        
+    }
+
+        
+        
+
+    </script>
+    
+</body>
+</html>
