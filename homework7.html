@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+</head>
+<body>  
+    <h1>CRUD</h1>
+    <script>
+        let students = [];
+        while (true){
+            let process = prompt("Nhập C, R ,U , D , exit để tạo mới , đọc , chinh sửa , xóa học sinh và thoát khỏi chương trình");
+            if (process === "C"){
+                let obj = {};
+                let newName = prompt(" moi ban nhap ten hoc sinh");
+                obj.name=newName;
+                let newAge = prompt("moi ban nhap tuoi");
+                obj.age=newAge;
+                let newClass = prompt("moi ban nhap lop");
+                obj.classRoom=newClass;
+                students.push(obj);
+                console.log(students);
+            }else if (process ===  "exit"){
+                break;
+            }else if ( process === 'R'){
+                let idName = prompt("ban muon xem info cua hoc sinh so may");
+                idName = Number(idName);
+                console.log(students[idName -1 ]);
+            }else if (process === "U"){
+                let newInfo = prompt("ban muon thay doi info cua hoc sinh so may");
+                newInfo=Number(newInfo);
+                let editInfo = prompt("ban muon doi ten hoc sinh thanh gi?");
+                students[newInfo - 1].name = editInfo;
+                let editAge = prompt("ban muon doi tuoi la gi");
+                students[newInfo - 1].age = editAge;
+                let editClass = prompt("ban muon doi lop la gi?");
+                students[newInfo -1 ].classRoom = editClass;
+                console.log(students); 
+            } else if (process === 'D'){
+                let whichOne = prompt("ban muon xoa thong tin cua hoc sinh so may?");
+                whichOne = Number(whichOne);
+                students.splice(whichOne -1 , 1);
+                console.log(students);
+            }
+
+            
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
