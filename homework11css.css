@@ -1,0 +1,93 @@
+.menu {
+    background: #D5B0AC;
+    color : #402E2A;
+    font-weight: bold;
+    
+    text-align: center;
+    
+    display: inline-block;
+    }
+
+#item1:hover{
+   
+    display: inline-block;
+    background-color: #9CD08F;
+    color:#FFFFFF;
+    width: 100px;
+    height: 30px;
+  
+
+}
+
+#item2:hover{
+   
+    display:inline-block;
+    background-color: #9CD08F;
+    color:#FFFFFF;
+    width: 100px;
+    height: 30px;
+
+
+}
+
+#item3:hover{
+  
+    display: inline-block;
+    background-color: #9CD08F;
+    color:#FFFFFF;
+    width: 100px;
+    height: 30px;
+
+
+    
+}
+
+#item4:hover{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    background-color: #9CD08F;
+    color:#FFFFFF;
+
+}
+
+
+.menu_vertical{
+    display: block;
+    background: #D5B0AC;
+    color : #402E2A;
+    font-weight: bold;
+    position: relative;
+    margin-top:100px;
+    width: 100px;
+    
+}
+
+#lol1{
+    
+    height: 30px;
+    display: block;
+   
+    border-bottom: 1px solid white;
+
+}
+#lol2{
+    
+    height: 30px;
+    display: block;
+    border-bottom: 1px solid white;
+
+}
+#lol3{
+    
+    height: 30px;
+    display: block;
+    border-bottom: 1px solid white;
+
+}
+#lol4{
+   
+    height: 30px;
+    display: block;
+
+}
