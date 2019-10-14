@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="homework12.js">
+</head>
+<body>  
+    
+
+<script>
+/*let a = "Dang had Duy";
+let newPromise = new Promise(function(resolve,reject){
+    if ( typeof(a) === "string" ){
+        resolve(a)
+    }else (typeof(a) !== "string")
+        reject("not a string")
+    
+})
+
+newPromise.then(function(data){
+    console.log(data);
+})
+newPromise.catch(function(err){
+    console.log(err);
+})
+
+*/
+
+let a = 1;
+let newPromise = new Promise(function(resolve,reject){
+    if ( typeof(a) === "string" ){
+        resolve(a)
+    }else (typeof(a) !== "string")
+        reject("not a string")
+    
+})
+
+
+async function show(){
+    try{
+        let result = await newPromise;
+        console.log(result)
+    } catch (err){
+        console.log(err);
+    }
+}
+show()
+    
+</script>
+
+</body>
+</html>
